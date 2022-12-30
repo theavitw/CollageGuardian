@@ -26,43 +26,28 @@
         </div>
                 
         
-        <div><div class="bg-image container">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100" />
-            <div style="background-color: rgba(0, 0, 0, 0.5 ) ; position: absolute; top: 50px;">
-              <h4>Welcome To Collage Guardian</h4>
-              <p class="m-0">Know Your Collage</p>
-            </div>
-        </div></div>
-        
-        <script> 
-                let flag = 0;
-                slideshow(flag)
-                function slideshow(num){
-                    let i = document.getElementsByClassName("slide")
-                    for(let y of i){
-                        y.style.display = "none";
-                    }
+        <div style="position: relative;
+        text-align: center;
+        color: rgb(0, 0, 0);">
+            <img src="https://www.thoughtco.com/thmb/PCVPjqDcfiY4az_kycvn-EJA-e8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/swarthmore-college-Eric-Behrens-flickr-5706ffe35f9b581408d48cb3.jpg" alt="Snow" style="width:75%;opacity: 75%;">
+            <div>
+                
+                  <div style="position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);">
                     
-                    if(num >= i.length){
-                        flag = 0;
-                        num = 0;
-                    }
-                    else if(num < 0){
-                        num = i.length - 1;
-                        flag =i.length - 1;
-                    }
-                    i[num].style.display = 'block';
-                }   
-                function co(x){
-                    flag = flag + x;
-                    slideshow(flag)
-                    circ()
-                }
-                function circ(timeFraction) {
-                    return 1 - Math.sin(Math.acos(timeFraction));
-                }
+                        <div class="boxes zoom-in"> Welcome to CollegeGuardian                               
+                             This is a Demo Website </div>
+                        
 
-        </script>    
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        
+        
         </div>
         
     </header>
