@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/0f2f450181.js" crossorigin="anonymous"></script>
+        <title>Travel website</title>
+    </head>
+    
+    <body class="about-body">
+        <div class="container">
+            <section>
+                <nav class="navbar">
+                    <div class="container">
+                        <h1 class="logo"> CollegeGuardian </h1>
+                        <ul class="navitems"> 
+                            <li class="nav-item"> <a href="index.html"> <b>Home</b> </a></li>
+                            <li class="nav-item"> <a href="about.html"> <b>About</b>  </a></li>
+                            <li class="nav-item"> <a href="contact.html"> <b> Contact</b></a></li>
+                            <li class="nav-item"> <a href='Events.html'> <b>Events</b> </a>  </li>
+                        </ul>
+                    </div>
+            </section>
+        </div>
+                
+        
+        <div><div class="bg-image container" style="max-width:max-content;" class="Container">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100" />
+            <div style="background-color: rgba(0, 0, 0, 0.5 ) ; position: absolute; top: 50px;">
+              <h4>Custom heading</h4>
+              <p class="m-0">paragraph</p>
+            </div>
+        </div></div>
+        
+        <script> 
+                let flag = 0;
+                slideshow(flag)
+                function slideshow(num){
+                    let i = document.getElementsByClassName("slide")
+                    for(let y of i){
+                        y.style.display = "none";
+                    }
+                    
+                    if(num >= i.length){
+                        flag = 0;
+                        num = 0;
+                    }
+                    else if(num < 0){
+                        num = i.length - 1;
+                        flag =i.length - 1;
+                    }
+                    i[num].style.display = 'block';
+                }   
+                function co(x){
+                    flag = flag + x;
+                    slideshow(flag)
+                    circ()
+                }
+                function circ(timeFraction) {
+                    return 1 - Math.sin(Math.acos(timeFraction));
+                }
+
+        </script>    
+        </div>
+        
+    </header>
+    <section class="showcase " id="text4">
+            <div class="container">
+                <div class="row row1">
+                    <div class="textb"> 
+                        <h1 class="lg-heading rrr" style="font-weight: bold;"> EVENT PORTAL </h1>
+                        <br><br> <br> <br>
+                        <p class="io"> Have a healthy dose of fun and masti.Never miss on any event live or recorded.We will make it easy for you</p> 
+                        <a href="Events.html" class="btn ttt">GET STARTED</a> 
+                    </div>
+                        
+                    <div class="imgbox"><img src="pexels-roberto-nickson-2559941.jpg" alt="Image Discription" class="rr"></div>
+                </div>
+                <div class="row row2">
+                    <div class="textb"> 
+                        <h1 class="lg-heading rrr" style="font-weight: bold;"> RECUITMENT U </h1>
+                        <br><br> <br> <br>
+                        <p class="io"> Get latest updates about recruitment.Don't miss out on opportunities.... </p> 
+                        <a href="RU.html" class="btn ttt">GET STARTED</a> 
+                    </div>
+                    <div class="imgbox"><img src="pexels-roberto-nickson-2559941.jpg"  class="rr"></div>
+                </div>    
+                <br> <br>
+               
+            </div>
+    </section>
+    <!-- <div class="container tte">
+        <h2 class="er err">HELLO WORLD </h2>
+            <p class="err">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur expedita minima fuga perspiciatis omnis. Debitis.</p>
+        <h2 class="er eru md">hello there</h2>
+            <p class="eru">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur expedita minima fuga perspiciatis omnis. Debitis.</p>
+
+        <h2 class="er eri">hello there</h2>
+            <p class="eri">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur expedita minima fuga perspiciatis omnis. Debitis.</p>
+    </div> -->
+
+    <section class="features">
+        <div class="container">
+            <div class="box-wrapper">
+                <div class="box box-1">
+                    <i class="fas fa-space-shuttle fa-2x"></i>
+                    <h1  class="md">
+                        HEADING
+                    </h1>
+                    
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, repellat. ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque!
+    
+                    </p>
+                </div>
+                <div class="box box2">
+                    <i class="fas fa-people-arrows  fa-2x"></i>
+                    <h1 class="md">
+                        HEADING
+                    </h1>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus. ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque!
+                    </p>
+                </div>
+                <div class="box box3">
+                    <i class="fas fa-meteor fa-2x"></i>
+                    <h1 class="md">
+                        HEADING
+                    </h1>
+                    
+                    <p>
+                        Lorem, ipsum dolor. ipsum dolor sit, amet consectetur adipisicing elit. Expedita, iste. ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque!
+                        
+                    </p>
+                </div>
+       
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        
+        <div class="container">
+            <footer class="footer">
+                <div class="social">
+                    <a class="fab fa-facebook-f fa-2x" href="" style="color: white;"></a>
+                    <a class="fab fa-twitter fa-2x " href="" style="color: white;"></>
+                    <a class="fab fa-instagram fa-2x" href="" style="color: white;" ></a>
+                    <p class="footer2">CollegeGuardian &copy; 2020, All Right Reserved</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
