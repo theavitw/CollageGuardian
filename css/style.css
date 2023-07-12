@@ -368,10 +368,7 @@ ul{
         background-color: #f7f7f7;
 }
 @media (max-width: 800px) {
-   html
-    {
-        font-size: 50%;    
-    }
+  
     .navbar .logo ,.navbar .navitems{
         /* padding: 0px; */
         float: none;
@@ -396,7 +393,7 @@ ul{
         text-align:center;
         /* padding: 12.5%; */
         margin: auto ;
-        font-size: 55%; 
+        
     }
     .header-content{
         padding: 3px;
